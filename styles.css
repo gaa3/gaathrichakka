@@ -682,11 +682,15 @@ section {
   }
 
   .carousel-track .card {
-    flex-basis: 88vw;
+    flex-basis: 100%;
   }
 
   .carousel {
     gap: 4px;
+  }
+
+  .section {
+    padding: 80px 16px;
   }
 }
 
