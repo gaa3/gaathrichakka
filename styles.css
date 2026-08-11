@@ -17,7 +17,11 @@
   --max-width: 1080px;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
 
 body {
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -416,7 +420,6 @@ section {
 .card {
   background: var(--paper);
   border-radius: var(--radius-md);
-  overflow: hidden;
   box-shadow: var(--shadow-card);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   display: flex;
@@ -440,6 +443,7 @@ section {
   font-weight: 600;
   font-size: 0.85rem;
   line-height: 1.4;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
 }
 
 .card-body {
@@ -675,6 +679,14 @@ section {
 
   .gallery-grid {
     columns: 2 160px;
+  }
+
+  .carousel-track .card {
+    flex-basis: 88vw;
+  }
+
+  .carousel {
+    gap: 4px;
   }
 }
 
