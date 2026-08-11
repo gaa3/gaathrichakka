@@ -58,3 +58,22 @@ if (track && prevBtn && nextBtn) {
   window.addEventListener('resize', updateArrowState);
   updateArrowState();
 }
+
+// View more projects toggle
+const moreToggle = document.getElementById('moreProjectsToggle');
+const morePanel = document.getElementById('moreProjects');
+
+if (moreToggle && morePanel) {
+  moreToggle.addEventListener('click', () => {
+    const isOpen = morePanel.classList.toggle('open');
+    moreToggle.setAttribute('aria-expanded', isOpen);
+    moreToggle.querySelector('.view-more-label').textContent = isOpen ? 'View Fewer Projects' : 'View More Projects';
+    if (isOpen) {
+      morePanel.hidden = false;
+    } else {
+      morePanel.addEventListener('transitionend', () => {
+        if (!morePanel.classList.contains('open')) morePanel.hidden = true;
+      }, { once: true });
+    }
+  });
+}
