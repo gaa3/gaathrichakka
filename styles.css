@@ -225,22 +225,6 @@ section {
   margin-bottom: 30px;
 }
 
-.hero-cta {
-  display: inline-block;
-  padding: 12px 28px;
-  background: var(--navy-accent);
-  color: #fff;
-  border-radius: 999px;
-  font-weight: 500;
-  font-size: 0.95rem;
-  box-shadow: var(--shadow-card);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-.hero-cta:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 14px 26px rgba(31, 58, 95, 0.32);
-}
-
 /* ---------- Sections ---------- */
 .section {
   max-width: var(--max-width);
@@ -654,30 +638,12 @@ section {
 .gallery-item.ph-4 { height: 260px; }
 .gallery-item.ph-5 { height: 210px; background: linear-gradient(160deg, var(--navy-accent), var(--baby-blue)); color: var(--paper); }
 
-/* ---------- Connect / Footer ---------- */
-.connect {
-  text-align: center;
-  padding: 90px 24px 60px;
-  background: linear-gradient(180deg, var(--paper-alt), var(--baby-blue-soft));
-  border-radius: 40px 40px 0 0;
-  margin-top: 40px;
-}
-
-.connect-title {
-  font-size: 2.2rem;
-  margin-bottom: 10px;
-}
-
-.connect-sub {
-  color: var(--ink-soft);
-  margin-bottom: 34px;
-}
-
+/* ---------- Social icons (hero) ---------- */
 .social-icons {
   display: flex;
   justify-content: center;
   gap: 22px;
-  margin-bottom: 40px;
+  margin-top: 8px;
 }
 
 .social-icon {
@@ -702,6 +668,11 @@ section {
   background: var(--navy-accent);
   color: #fff;
   transform: translateY(-4px);
+}
+
+.site-footer {
+  text-align: center;
+  padding: 32px 24px;
 }
 
 .footer-note {

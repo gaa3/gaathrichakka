@@ -27,7 +27,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.12 });
 
-document.querySelectorAll('.section, .connect').forEach(el => {
+document.querySelectorAll('.section').forEach(el => {
   el.classList.add('fade-init');
   observer.observe(el);
 });
