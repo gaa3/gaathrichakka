@@ -31,3 +31,30 @@ document.querySelectorAll('.section, .connect').forEach(el => {
   el.classList.add('fade-init');
   observer.observe(el);
 });
+
+// Initiatives carousel arrows
+const track = document.getElementById('initiativesTrack');
+const prevBtn = document.getElementById('initiativesPrev');
+const nextBtn = document.getElementById('initiativesNext');
+
+if (track && prevBtn && nextBtn) {
+  const scrollByCard = (direction) => {
+    const card = track.querySelector('.card');
+    const cardWidth = card ? card.getBoundingClientRect().width : 320;
+    const gap = 26;
+    track.scrollBy({ left: direction * (cardWidth + gap), behavior: 'smooth' });
+  };
+
+  prevBtn.addEventListener('click', () => scrollByCard(-1));
+  nextBtn.addEventListener('click', () => scrollByCard(1));
+
+  const updateArrowState = () => {
+    const maxScroll = track.scrollWidth - track.clientWidth;
+    prevBtn.disabled = track.scrollLeft <= 4;
+    nextBtn.disabled = track.scrollLeft >= maxScroll - 4;
+  };
+
+  track.addEventListener('scroll', updateArrowState);
+  window.addEventListener('resize', updateArrowState);
+  updateArrowState();
+}

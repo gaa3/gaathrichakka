@@ -328,18 +328,89 @@ section {
   font-size: 0.95rem;
 }
 
-/* ---------- Grids (Projects / Competitions) ---------- */
+/* ---------- Grids (Competitions) ---------- */
 .grid {
   display: grid;
   gap: 26px;
 }
 
-.grid-projects {
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-}
-
 .grid-competitions {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+/* ---------- Carousel (Initiatives) ---------- */
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 26px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 4px 4px 16px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-track .card {
+  flex: 0 0 320px;
+  height: auto;
+  align-self: stretch;
+  scroll-snap-align: start;
+}
+
+.carousel-arrow {
+  flex-shrink: 0;
+  width: 40px;
+  height: 48px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--navy-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.carousel-arrow:hover {
+  transform: scale(1.12);
+}
+.carousel-arrow:disabled {
+  opacity: 0.25;
+  cursor: default;
+  transform: none;
+}
+.carousel-arrow svg {
+  width: 34px;
+  height: 34px;
+}
+
+.card-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+.card-title-row .card-title {
+  margin-bottom: 0;
+}
+
+.card-logo {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--paper);
+  box-shadow: 0 0 0 2px var(--baby-blue-soft);
 }
 
 .card {

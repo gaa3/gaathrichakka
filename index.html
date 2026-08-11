@@ -120,11 +120,19 @@
     <h2 class="section-title">Initiatives</h2>
     <p class="section-subtitle">Youth-led organizations and ventures I've founded, led, or grown.</p>
 
-    <div class="grid grid-projects">
+    <div class="carousel">
+      <button class="carousel-arrow carousel-arrow-prev" id="initiativesPrev" aria-label="Scroll initiatives left">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+
+      <div class="carousel-track" id="initiativesTrack">
       <article class="card">
         <div class="card-thumb"><span>Co-Founder & Executive Director</span></div>
         <div class="card-body">
-          <h3 class="card-title">Peared</h3>
+          <div class="card-title-row">
+            <img class="card-logo" src="images/logos/peared.jpeg" alt="Peared logo">
+            <h3 class="card-title">Peared</h3>
+          </div>
           <ul class="card-bullets">
             <li>A <strong>501(c)(3)</strong> youth organization centralizing local volunteering efforts from youth-led nonprofits.</li>
             <li>Supported <strong>70+ nonprofits</strong> and <strong>300+ volunteers</strong> through social media, promotional materials, microgrants, and event logistics.</li>
@@ -135,9 +143,12 @@
       </article>
 
       <article class="card">
-        <div class="card-thumb"><span>CEO</span></div>
+        <div class="card-thumb"><span>Chief Executive Officer</span></div>
         <div class="card-body">
-          <h3 class="card-title">The Youth Economics Initiative</h3>
+          <div class="card-title-row">
+            <img class="card-logo" src="images/logos/yei.jpg" alt="The Youth Economics Initiative logo">
+            <h3 class="card-title">The Youth Economics Initiative</h3>
+          </div>
           <ul class="card-bullets">
             <li>Organized and hosted <strong>EconBowl</strong> and <strong>EconOlympiad</strong>, reaching <strong>1,000+ participants</strong>.</li>
             <li>Launched <strong>CORE</strong> (Community of Rising Economists) to unite student economists worldwide.</li>
@@ -150,7 +161,10 @@
       <article class="card">
         <div class="card-thumb"><span>Student Visionary, Junior Leadership Committee</span></div>
         <div class="card-body">
-          <h3 class="card-title">Blood Cancer United Student Visionaries of the Year</h3>
+          <div class="card-title-row">
+            <img class="card-logo" src="images/logos/bcu.png" alt="Blood Cancer United logo">
+            <h3 class="card-title">Blood Cancer United Student Visionaries of the Year</h3>
+          </div>
           <ul class="card-bullets">
             <li>Personally raised <strong>$2,500+</strong> to support <strong>55,000+ patients</strong> and fund <strong>300+ treatment methods</strong> through LLS.</li>
             <li>Guided <strong>Team Cure Seekers</strong> (20+ students) to raise <strong>$30,000+</strong> over two years.</li>
@@ -163,7 +177,10 @@
       <article class="card">
         <div class="card-thumb"><span>Director of Outreach</span></div>
         <div class="card-body">
-          <h3 class="card-title">Girls For Business</h3>
+          <div class="card-title-row">
+            <img class="card-logo" src="images/logos/girls-for-business.jpeg" alt="Girls For Business logo">
+            <h3 class="card-title">Girls For Business</h3>
+          </div>
           <ul class="card-bullets">
             <li>Organized monthly education events — admissions advice, career panels, networking — with speakers from <strong>The Wharton School</strong> and <strong>Columbia University</strong>.</li>
             <li>Led a team of <strong>7 members</strong> coordinating outreach, partnerships, and weekly planning.</li>
@@ -176,7 +193,10 @@
       <article class="card">
         <div class="card-thumb"><span>Writer</span></div>
         <div class="card-body">
-          <h3 class="card-title">The Teen Magazine</h3>
+          <div class="card-title-row">
+            <img class="card-logo" src="images/logos/teen-magazine.jpeg" alt="The Teen Magazine logo">
+            <h3 class="card-title">The Teen Magazine</h3>
+          </div>
           <ul class="card-bullets">
             <li>Published opinion and analysis articles on media, technology, and gender, including <strong>"Why Are We Pitting Women Against Each Other?"</strong> and <strong>"Should We Ban TikTok?"</strong></li>
             <li>Analyzed the social, political, and environmental implications of digital platforms and online discourse.</li>
@@ -189,7 +209,10 @@
       <article class="card">
         <div class="card-thumb"><span>President</span></div>
         <div class="card-body">
-          <h3 class="card-title">OTHS UNICEF</h3>
+          <div class="card-title-row">
+            <img class="card-logo" src="images/logos/oths-unicef.png" alt="OTHS UNICEF logo">
+            <h3 class="card-title">OTHS UNICEF</h3>
+          </div>
           <ul class="card-bullets">
             <li>Hosted issue-based fundraisers through spirit nights and marathons, raising about <strong>$2,000</strong> for global causes.</li>
             <li>Educated the student body on malnutrition and food insecurity affecting developing nations.</li>
@@ -202,7 +225,10 @@
       <article class="card">
         <div class="card-thumb"><span>Innovator, Co-Founder, Business Developer</span></div>
         <div class="card-body">
-          <h3 class="card-title">Clarity</h3>
+          <div class="card-title-row">
+            <img class="card-logo" src="images/logos/clarity.png" alt="Clarity logo">
+            <h3 class="card-title">Clarity</h3>
+          </div>
           <ul class="card-bullets">
             <li>A low-cost home <strong>microplastic detector and filter</strong> that builds a data map to power water-processing policy.</li>
             <li>Recognized/endorsed by <strong>NASA officials</strong>, <strong>Equinor</strong>, and <strong>Katy Magazine</strong> for innovation in water safety technology.</li>
@@ -210,6 +236,11 @@
           </ul>
         </div>
       </article>
+      </div>
+
+      <button class="carousel-arrow carousel-arrow-next" id="initiativesNext" aria-label="Scroll initiatives right">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
     </div>
   </section>
 
