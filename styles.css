@@ -453,6 +453,40 @@ section {
   font-weight: 600;
 }
 
+/* Sub-sections inside a timeline card (e.g. research projects) */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 16px;
+}
+
+.project {
+  border-left: 3px solid var(--baby-blue);
+  padding-left: 14px;
+}
+
+.project-title {
+  font-size: 0.98rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--navy-accent);
+}
+
+.project-num {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.project .card-bullets {
+  margin-top: 8px;
+}
+
 .card-links {
   display: flex;
   flex-wrap: wrap;
